@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav1 {
+            display: flex;
+            margin: auto;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        .Flag {
+            width: 50px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head1">
+            <nav>
+                <div class="nav1">
+                <ul>
+                    <img class="Flag" src="data:image/png;base64,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" alt="">
+                    <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index3.html">Etymology</a></li>
+                        <li><a href="./index2.html">History</a></li>
+                        <li><a href="./index1.html">Geography</a></li>
+                        <li><a href="./index4.html">Politics</a></li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <h1 align="center">Main article:<span style="color: blue;">History of Cambodia</span></h1>
+        <h2 align="center"><u>Prehistory</u></h2>
+        <h4>Main article: Early history of Cambodia</h4>
+        <p>There exists evidence for a Pleistocene human occupation of what later is Cambodia, which includes quartz and quartzite pebble tools found in terraces along the Mekong River, in Stung Treng and Kratié provinces, and in Kampot province.[26] Some archaeological evidence shows communities of hunter-gatherers inhabited the region during the Holocene: the most ancient archaeological discovery site in Cambodia is considered to be the cave of Laang Spean, which belongs to the Hoabinhian period. Excavations in its lower layers produced a series of radiocarbon dates around 6000 BC.[26][27] Upper layers in the same site gave evidence of transition to Neolithic, containing the earliest dated earthenware ceramics in Cambodia.[28] </p>
+        <p>Archaeological records for the period between the Holocene and Iron Age remain equally limited. An event in prehistory was the penetration of the first rice farmers from the north, which began in the third millennium BC.[29] Prehistoric evidence are the "circular earthworks" discovered in the red soils near Memot and in the adjacent region of Vietnam in the latter 1950s. Their function and age are still debated, and some of them possibly date from the second millennium BC.[30][31] Other prehistoric sites of somewhat uncertain date are Samrong Sen (not far from the ancient capital of Oudong), where the first investigations began in 1875,[32] and Phum Snay, in the northern province of Banteay Meanchey.[33]</p>
+        <p>Iron was worked by about 500 BC, with supporting evidence coming from the Khorat Plateau, in what later is Thailand. In Cambodia, some Iron Age settlements were found beneath Baksei Chamkrong and other Angkorian temples while circular earthworks were discovered at the site of Lovea kilometres north-west of Angkor. Burials testify to improvement of food availability and trade, and the existence of a social structure and labour organisation.[34] Kinds of glass beads recovered from sites, such as the Phum Snay site in the northwest and the Prohear site in the southeast, suggest that there were two main trading networks at the time. The two networks were separated by time and space, which indicate that there was a shift from one network to the other at about the 2nd–4th century AD, probably due to changes in socio-political powers.[34]</p>
+        <h4>Pre-Angkorian, Angkorian, and Post-Angkor</h4>
+        <p>Main articles: Kingdom of Funan, Chenla, Khmer Empire, and Post-Angkor Period Angkor Wat Faces of Bodhisattva Avalokiteshvara at Prasat Bayon During the 3rd, 4th, and 5th centuries, the Indianised states of Funan and its successor, Chenla, coalesced in what later is Cambodia and southwestern Vietnam. For more than 2,000 years, what was to become Cambodia absorbed influences from India, passing them on to other Southeast Asian civilisations that later became Thailand and Laos.[35]</p>
+        <p>The Khmer Empire grew out of the remnants of Chenla, becoming firmly established in 802 when Jayavarman II (reigned c. 790 – c. 835) declared independence from Java and proclaimed themselves a Devaraja. They and their followers instituted the cult of the God-king and began a series of conquests that formed an empire which flourished in the area from the 9th to the 15th centuries.[36] During the rule of Jayavarman VIII the Angkor empire was attacked by the Mongol army of Kublai Khan; the king was able to buy peace.[37] Around the 13th century, Theravada missionaries from Sri Lanka reintroduced Theravada Buddhism to Southeast Asia, having sent missionaries previously in the 1190s.[38][39] The religion spread and eventually displaced Hinduism and Mahayana Buddhism as the popular religion of Angkor; it was not the official state religion until 1295 when Indravarman III took power.[40]</p>
+        <img style="margin: auto; display: block;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Vietnam_1760.jpg/500px-Vietnam_1760.jpg" alt="">
+    </div>
+</body>
+</html>

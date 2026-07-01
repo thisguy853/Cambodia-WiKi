@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav1 {
+            display: flex;
+            margin: auto;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-img {
+            display: block;
+            margin:  auto;
+            width: 40%;
+            height: auto;
+            margin-top: 5px;
+        }
+        .Flag {
+            width: 50px;
+            height: auto;
+        }
+         table, tr, th, td {
+            border: 1px solid black; 
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+    <header>
+        <div class="head1">
+            <nav>
+                <div class="nav1">
+                <ul>
+                    <img class="Flag" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQcAAACUCAMAAACp8BzMAAABEVBMVEXgACUDLqH///84LZ7yAAD4+PjmACC7u7ubm5vr6+vCwsLbz9CXl5epFSPf39/j4+PKysqxsbHy8vKlpaXQ0NDZ2dmrq6uQkJDlAA+2b3Bubm6Kiop+fn5fX193d3fjACN3jYzHEiHBAADCFhO/Ex+mAADbAAC5FhScAADuACBKSkprAACMX2KKAACwAACAMzW1fHvIPkXv+/rcMjjTvLvWABXJ3dxVVVUwMDA9PT11AADJNjzDU1bTACCiAxiYISqZMziWgoRyVlhyODq3np6WER+om5ynQUeXbG6OQ0Z6SEvBIC+tgIG8Z2jDmZq1QEOBbGuwKTFcJSgtHx5BAACjaGmoX2E3VVSgS1EuPz5wGBju8s76AAAKlElEQVR4nO2cC1cctxWAXbVaPRAavUVmhtlADMYO2BBDSGxjmxSDHROK3dpJ+v9/SO+svLDALG3PabM7tj6OvexezZ7RN5qrK7Fw50+ZljuzPoE5IXtIZA+J7CGRPSSyh0T2kMgeEtlDIntIZA+J7CGRPSSyh0T2kMgeEtlDIntIZA+J7CGRPSSyh0T2kMgeEtlDIntIZA+J7CGRPSSyh8SdP2da7vwl03Ink8lk5pjBrE9gPth7sTfrU5gHll7KjfuzPonZc/9FVIfPv3gRg8WfrLU/3f3Sc8TeX63WOnz7pXtYJRgwR+uzPpHZMnhlNaFEH6992QPiYIMpG61b2DiY9anMksFJFRodSWOPF7/kAbGytVtUD9CDWBxtzPpcZsjg3WYMjhPuwuHrt8NZn87/m2kdHB5s7CJJoxO0wEdrUw//TAQNV1a6ezLYebPpKLHGEqp+fjNlQEw9vG+sn252VweDnSPiBCOKG+HI0ZSacv31h8+iuFj9pZBfdfbk4OEZRpIQRrhE5vRh59S5vi3lL5+BiPsnDiH2quNaD3denUilIkMsKrfw4lXXjTF4yRByf+v/pLq+bQhBm0s3I4Nnx4dBONCEuBf28PRtR2+XzhHhZrv/A2LjvHK+OuxYSA1XjhizlthgdQisOOvYjhl8e1h7V5/3vrrYe60aGxvfdA4Ij7CM2oQKY7Twrms4NL6Mtlave75lNVw7l9axEm1u3Qzee3KGbEExwlFafLpx92aTrU20zJyV52v9njvvv6xdrUXFzn++seU02GliVNRDfvDWCXF4M0/e//mc1VTDe7zs947V3m+SBomqBj25PisOB9/sIhOc0xVxLiB0trp3XcTBE9RUSFrqT3q9Hh08fa+JJrGg5P3i1U4Ods7fvVhAPlCFlBAG7W69O9+5miKGi+85lYIQot8/7fPUufd2gZe0QCUkw42rqW7vmed/1xhZDfdFIMgc/YO7ax721rCOJSpow3fv9jhBrLzYOlOFDMIbrh8+mhzaB4sHp24/WgVpkiFsuTj8SZ2uLF5p8+ih5tiLIAt+9vzFyh99+v8jhoO912dnStn2orPD7ePVidjj+u1TEWvvNS40w9qrOsbH75rHE5d99Xj7sCAWGevU6dH23qCfQ+LtzuoZ4kpAwUiCI9/tXvFgP/xiJSa+cBoFxxzB8vjZB3rFw+53xFmOsBOKQxrd6ZhY55/Bb/bkCCltmVOo9hZd8xBhlkBE+xoj07TddY5EcdUDsr5ByjGrFTo6sSc9zJUHi29UbZGShnPiJArXPVgJHjCXo/WF5LCacjLE6x6QVIRzIxUKtTpZ7N3sObxHNx0ssDgpCEaxnRF2V/cOlsYcWOudhcRgDXiAC46ZVd7G4UWLlT3wQDQci0mhOXyrNuk3s+7Xf8vw3vfUeY5UiBKjolIakTfbrz9+9Ylt8OAJJ1SM5osoiCIOPIzjX33c/PCGI80r1q5BAhQZTtnv++hBq9YDjHZI+QFRGPcuUj3GBik9plBIEsIR1NVY+kJfxmmllEPtkZYUzo08kF56sO1drzzmQcb20TMXPf4Es1Wsa93oYJVRIegm1DBzUjZu4CtfeAT9pzJAEdF6IKGXHiglCiFFFResUghDPqgDJyPghiAGFpKUMrgxMDSgsCw1RJBxg1BbB3cUr0zkMG9CGtWin/dFMFQgHglt+2cJIoIRcTnuCQIBuIzQRaRi0z5DJIZxXBAWITlaoQ2jRHAkrNH99IC8Rs5XsIigNdznjiNfoE9g4oiGZQcMCHhWWKqrUhOoLscNpEfEwVEw98IiA2ZXIlE/Pah9W/7YtOUBMgj/8KAUy8tiTFymFkopRMyo16YdLtZW5UWDtnH54Acostq4a34s7b7rn4c7w0dQ+yBPY1MJAQo0CIGq8QIN60zsDK2Wo6DLFTUOhoLVlw0sHKDCcmyEqJrYbtc4+bKHK4z7j9oa0asAF5SYwNtuS3xBAS8YZ8ANXG7qIGnCoFHssoH3IEbZAmwardqyk7/s2OScf+5+nTxAAiDck7Z8tp9mA5gPtB15wIq2HhRuPbTj4aKBbc0Rz+GBBeXBw9e9/AHf8O7XuCAueVCeSMYUZ1LC/AlJ0MAyE3t+6cFwqC20L6QEedgXhjvGPFHqkwcicW89FDSqsQctHFEULrOByaPiXGhUaDLhgWiGtKCuwpWAmoFQR5zQYw8q0qK3Hhi3lx4sI6OfZUL1iCgmVqGCq4n7QkFycIEiYRQx0A5at+vtsQfL2efjQbceeLcHzsceuDa6IPqaB5I9fG4e/BfqAbrsnIb5kLuCBMMLAhaw0rCchgiClPCpfrAOG8gPUIhbWKArggnjpOAmEO9G9QO8jerpfHHn3q+0XK6gVLa6qWNZiqYqywhfyxZK5uU6iKamoV4ONizXltYNtdXyvt0X0LRsmzbwHSzOg6UlvE1Df/2mhx6Gw980xqqtHzAmRYDy0DiYHlva/yVEncPSW3hqpWufYF2Y1ALaKHjuilBwqD0Dh0OxPundzv3B2tqT362y7d5KIKTStSg1p/XF9gJprAp1IKWu4WkDj/BMhVJfNKitggVpHSIhIYoantrfn6yt9WundoMVhhWAJEJJVrPKFF0w7SopZa0I64ybylMmVdSjMDMFm/rxwnlksDXeRkAOykTIfRR1o4zFCFvmpsRhZoH5Ql+G+/SB9OHL9xf7DIEIYX9Ey1Z0QUsW21ZFSafE0T4cqS+i8f2L/uSIVXV5QX07b946HtqrPn08GBgPJkyEd/vymbHhYH334qyx056xColpHhgtWCGmehBwzxReT4g9Wu/HrDFcefr2WI7xXAdN9lFVyC6KwKLWOjI9JV6hkrTvcBk+fvq0F/XU0sfLzRRCNEn3RTPx2gS8Kkb3RRGnxGs8ui/C5Gv6Yx/2pZa2zeTAdpo7X96SHwTUWvGW+aLyjusrYbbdDw9s4pxx68GVKE7ND8mDmhIXuHKK6yvhPngYrq9/mNhshVpaF9Cb9qfWXSDO6OjnWWpKPGKNoK5Wky8WH9bX5zxDDJ9unx7zCSBDwIAoUeN4FzASIjwIFlVn3NWodhwy5ZX3PD7bnvOPzw2ecWPYJEpLZiKKV18dYwijzDDBSGcYjsTBMKn51VcNn/NP4C89u5bwID8o75up9QNnwnl3W/0QvVf6evqY999EGHR44E5Oz5PgwTs/PU/GNF9cD6v59jBceuavnfGorrZT5033n9TVLFwPu2f35zhTHmxs/bOmV4B1FqWwztq3tAtbFlXbqiinxdt1FoV11tWXm2+35vc3gAePyY3riUfzJr1lfXH7eBBGj/Zpb0b043kdEcPHutMDxuKWOooabMT0OsoEKBhu5Acg9M0DteHBLXkyWmtvqyeXg7X994BcWmdNvS/+TZ4Uo3WW7gjP831xvHADHfnCwiF8dXM8ihwuhCnxQ2ixwGNH+HB+V98Hzxdv8nz0rysyGZ8eHcU7GjyfdW9vYfBHMuvOZjKZL4VZ/0HUOSH/nd5E/rvNiewhkT0ksodE9pDIHhLZQyJ7SGQPiewhkT0ksodE9pDIHhLZQyJ7SGQPiewhkT0ksodE9pDIHhLZQyJ7SGQPiewhkT0ksodE9pDIHhLZQ+Jfwah+gDFDqb0AAAAASUVORK5CYII=" alt="">
+                    <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index3.html">Etymology</a></li>
+                        <li><a href="./index2.html">History</a></li>
+                        <li><a href="./index1.html">Geography</a></li>
+                        <li><a href="./index4.html">Politics</a></li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+    </header> 
+      <p class="main">
+        <h1 align="center">Main article:<span style="color: blue;">Geography of Cambodia</span></h1>
+        <p>Cambodia has an area of 181,035 km2 (69,898 sq mi) and lies entirely within the tropics, between latitudes 10° and 15°N, and longitudes 102° and 108°E. It borders Thailand to the north and west, Laos to the northeast, and Vietnam to the east and southeast. It has a 443 km (275 mi) coastline along the Gulf of Thailand.[14][85]</p>
+        <p>Cambodia's landscape is characterised by a low-lying central plain that is surrounded by uplands and low mountains and includes the Tonle Sap (Great Lake) and the upper reaches of the Mekong River delta. Extending outward from this central region are transitional plains, thinly forested and rising to elevations of about 200 m (650 ft) above sea level.[101][102] In Cambodia forest cover is around 46% of the total land area, equivalent to 8,068,370 hectares (ha) of forest in 2020, down from 11,004,790 hectares (ha) in 1990. In 2020, naturally regenerating forest covered 7,464,400 ha, and planted forest covered 603,970 ha. Of the naturally regenerating forest 4% was reported to be primary forest (consisting of native tree species with no clearly visible indications of human activity). For the year 2015, 100% of the forest area was reported to be under public ownership.[103][104]</p>
+        <p>To the north the Cambodian plain abuts a sandstone escarpment, which forms a southward-facing cliff stretching more than 320 km (200 mi) from west to east and rising abruptly above the plain to heights of 180–550 m (600–1,800 ft). This cliff marks the southern limit of the Dângrêk Mountains.[105][106][107]</p>
+        <p>Flowing south through Cambodia's eastern regions is the Mekong River.[108] East of the Mekong the transitional plains gradually merge with the eastern highlands, a region of forested mountains and high plateaus that extend into Laos and Vietnam.[109] In southwestern Cambodia two distinct upland blocks, the Krâvanh Mountains and the Dâmrei Mountains, form another highland region that covers much of the land area between the Tonle Sap and the Gulf of Thailand.[110]</p>
+        <p> In this largely uninhabited area, Phnom Aural, Cambodia's highest peak rises to an elevation of 1,813 m (5,949 ft).[111] The southern coastal region adjoining the Gulf of Thailand is a narrow lowland strip, heavily wooded and sparsely populated, which is isolated from the central plain by the southwestern highlands.[112]</p>
+        <p>The most distinctive geographical feature is the inundations of the Tonle Sap, measuring about 2,590 km2 (1,000 sq mi) during the dry season and expanding to about 24,605 km2 (9,500 sq mi) during the rainy season. This densely populated plain, which is devoted to wet rice cultivation, is the heartland of Cambodia. Much of this area has been designated as a biosphere reserve.[113]</p>
+      <div class="pic" style="margin: auto; display: flex; align-items: center; justify-content: center; gap: 40px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Cambodia_Geographic_map_en.svg/960px-Cambodia_Geographic_map_en.svg.png" alt="" width="40%">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Cambodia_Regions_Map.png/960px-Cambodia_Regions_Map.png" alt="" width="40%">
+      </div>
+        <p style="text-align: center;"><strong>Administrative divisions </strong></p>
+        <p>The autonomous municipality (reach thani) and provinces (khaet) of Cambodia are first-level administrative divisions. Cambodia is divided into 25 provinces including the autonomous municipality. Municipalities and districts are the second-level administrative divisions of Cambodia. The provinces are subdivided into 159 districts and 26 municipalities. The districts and municipalities in turn are further divided into communes (khum) and quarters (sangkat).</p>
+    <p>
+        <div style="display: flex; align-items: center; justify-content: center;">
+    <table>
+        <tbody><tr>
+            <th>Number</th>
+            <th>Province</th>
+            <th>Capital</th>
+        </tr>
+        <tr>
+            <td>Banteay Meanchey</td>
+            <td>Battambang</td>
+            <td>Kampong Cham</td>
+        </tr>
+        <tr>
+            <td>Serei Saophoan</td>
+            <td>Battambang</td>
+            <td>Kampong Cham</td>
+        </tr>
+    </tbody>
+    </table>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Provincial_Boundaries_in_Cambodia.svg/1920px-Provincial_Boundaries_in_Cambodia.svg.png" alt="" width="30%">
+        </div>
+        The autonomous municipality (reach thani) and provinces (khaet) of Cambodia are first-level administrative divisions. Cambodia is divided into 25 provinces including the autonomous municipality.
+         Municipalities and districts are the second-level administrative divisions of Cambodia. The provinces are subdivided into 159 districts and 26 municipalities. The districts and municipalities in turn are further divided into communes (khum) and quarters (sangkat).</p>
+    </p>
+</body>
+</html>
